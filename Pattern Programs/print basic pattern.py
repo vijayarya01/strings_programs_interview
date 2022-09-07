@@ -119,3 +119,94 @@ for i in  range(user_input):
     for j in range(i+1):
         print(j+1 , end=" ")
     print()
+
+#To print right angle triangle pattern with ascending alphabet symbols in dictionary order in every row
+print(f"\nright angle triangle pattern with alphabet symbols in dictionary order with input given {user_input}".format(user_input))
+for i in range(user_input):
+    for j in range(i+1):
+        print((chr(65 + j)), end=" ")
+    print()
+
+#To print right angle triangle pattern with descending digit \ in dictionary order in every row
+print(f"\nRight angle triangle pattern with descending digit \ in dictionary order with input given {user_input}".format(user_input))
+for i in range(user_input):
+    for j in range(i+1):
+        print((user_input- j), end= ' ')
+    print()
+
+##To print right angle triangle pattern with reverse  alphabet order in dictionary order in every row
+print(f"\nright angle triangle pattern with reverse alphabet symbols in dictionary order with input given {user_input}".format(user_input))
+for i in range(user_input):
+    for j in range(i+1):
+        print(chr(64+ user_input -j), end= " ")
+    print()
+
+#To print INVERT right angle triangle pattern with * symbols in  in every row
+print(f"\nINVERT right angle triangle pattern with * symbols in every row with input given {user_input}".format(user_input))
+for i in range(user_input):
+    #user_input = user_input -i
+    print("* " * (user_input-i))
+
+# print right INVERT angle triangle pattern with fixed digit in each row
+print(f"\nprint  INVERT right angle traingle pattern with fixed digit in each row with input given {user_input}".format(user_input))
+
+# content fixed in each row , so no second loop is required.
+for i in range(user_input):
+    print((str(i+1) + " ") * (user_input-i))
+
+
+# print right INVERT angle triangle pattern with fixed alphabet in each row
+print(f"\nprint  INVERT right angle traingle pattern with fixed alphabets in each row with input given {user_input}".format(user_input))
+
+# content fixed in each row , so no second loop is required.
+for i in range(user_input):
+    print((chr(65 + i) + " ")* (user_input-i))
+
+# print right INVERT angle triangle pattern with fixed digit descending in each row
+print(f"\nprint  INVERT right angle traingle pattern with fixed digit descending in each row with input given {user_input}".format(user_input))
+
+# content fixed in each row , so no second loop is required.
+for i in range(user_input):
+    print((str(user_input-i) + " ")* (user_input-i))
+
+#24.  print right INVERT angle triangle pattern with fixed alphabet descending in each row
+print(f"\nprint  INVERT right angle traingle pattern with fixed alphabet descending in each row with input given {user_input}".format(user_input))
+
+# content fixed in each row , so no second loop is required.
+for i in range(user_input):
+    print((chr(64+user_input-i) + " ")* (user_input-i))
+
+# print right INVERT angle triangle pattern with  digit  in ascending order in each row
+print(f"\nprint  INVERT right angle traingle pattern with digit in ascending order each row with input given {user_input}".format(user_input))
+
+# content not fixed in each row , so second loop is required.
+for i in range(user_input): # 0,1,2,3
+    for j in range(user_input-i):
+        print((j+1) , end=" ")
+    print() # this bring to next line, empty space. else the output be like: 0 1 2 3 4 1 2 3 4 2 3 4 3 4 4
+
+#To print Invert right angle triangle pattern with descending digit \ in dictionary order in every row
+print(f"\n Invert Right angle triangle pattern with alphabets in dictionary order with input given {user_input}".format(user_input))
+for i in range(user_input): # number of elements  = userinput-i
+    for j in range(user_input - i):
+        print(chr(65 + j) , end= " ") # j increases by 1, such as A B C D E
+    print()
+
+#27. print right INVERT angle triangle pattern with  digit  in descending order in each row
+print(f"\nprint  INVERT right angle traingle pattern with digit in descending order each row with input given {user_input}".format(user_input))
+
+# content no fixed in each row , so second loop is required.
+for i in range(user_input):
+    for j in range(user_input - i): # no of elements
+        print(user_input -j , end= " ")
+    print()
+
+#28  print right INVERT angle triangle pattern with alphabets  reverse  in dictionary order in each row
+print(f"\nprint  INVERT right angle traingle pattern with alphabets  reverse  in dictionary order each row with input given {user_input}".format(user_input))
+
+# content not fixed in each row , so second loop is required.
+for i in range(user_input):
+    for j in range(user_input-i):
+        print(chr(64+user_input-j) , end= ' ')
+    print()
+# print pyramid pattern with * symbols
